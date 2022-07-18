@@ -1,0 +1,64 @@
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+}
+
+.footer__text{
+    font-size: 14px;
+    line-height:1.14;
+    color: var(--ft-text-color);
+
+    @media screen and (min-width: $tablet){
+    font-size: 16px;
+    line-height: 1.19px;
+    }
+}
+
+.footer__button-about-us{
+    position: relative;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid var(--ft-text-color);
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: color var(--transition-params);
+}
+
+.footer__button-about-us:hover {
+    color:var(--accent-color)
+}
+
+.footer__button-about-us::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:-1px;
+    height: 1px;
+    width: 0px;
+    background-color: var(--accent-color) ;
+    transition: width var(--transition-params);
+}
+.footer__button-about-us:hover::after{
+    width: 100%;
+}
+
+.footer__text--second-part{
+    display: block;
+    margin-top: 10px;
+
+    @media screen and (min-width: $tablet) {
+    display: inline;
+    margin-top:0;
+    }
+}
+
+.footer__icon-heart{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+

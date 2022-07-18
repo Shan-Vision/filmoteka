@@ -1,0 +1,87 @@
+.header {
+  position: relative;
+  height: 230px;
+  max-width: 1024px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $tablet) {
+    height: 219px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // height: 216px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header.header-search {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.56),
+      rgba(0, 0, 0, 0.56)
+    ),
+    url(../images/hero.jpg);
+}
+
+.header.header-library {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.56),
+      rgba(0, 0, 0, 0.56)
+    ),
+    url(../images/library.jpg);
+}
+
+.header-box {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    max-width: inherit;
+  }
+}
+.header-bgc {
+  @media screen and (min-width: $desktop) {
+    background-color: var(--helpers-bg-color);
+    width: 100%;
+  }
+}
+
+.header.header-search .library-box {
+  display: none;
+}
+.header.header-search .nav-home {
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+
+    width: 100%;
+    height: 3px;
+    background: var(--accent-color);
+  }
+}
+
+.header.header-library .search {
+  display: none;
+}
+.header.header-library .nav-library {
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+
+    width: 100%;
+    height: 3px;
+    background: var(--accent-color);
+  }
+}

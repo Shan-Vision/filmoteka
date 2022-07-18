@@ -1,0 +1,21 @@
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 118px;
+  @media screen and (min-width: $tablet) {
+    width: 142px;
+  }
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17em;
+  text-transform: uppercase;
+  padding: 50px 0;
+  display: block;
+
+  color: var(--main-text-color);
+}
