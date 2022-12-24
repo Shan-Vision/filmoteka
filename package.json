@@ -1,10 +1,10 @@
 {
   "name": "dervi-filmoteka",
   "version": "2.0.0",
-  "description": "", 
+  "description": "",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka-study-project/"
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",
